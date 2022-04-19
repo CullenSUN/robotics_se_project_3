@@ -14,12 +14,13 @@
         <param name="initial_pose_y" value="0"/>
         <param name="initial_pose_a" value="-1.57"/>
         
+        <param name="laser_min_range" value="1"/>
         <param name="laser_max_range" value="15"/>
-        <param name="laser_likelihood_max_dist" value="3"/>
+        <param name="laser_max_beams" value="50"/>
         
         <param name="odom_alpha1" value="0.1"/>
-        <param name="odom_alpha2" value="0.1"/>
-        <param name="odom_alpha3" value="0.1"/>
+        <param name="odom_alpha2" value="0.3"/>
+        <param name="odom_alpha3" value="0.2"/>
         <param name="odom_alpha4" value="0.1"/>
 	</node>
     <node name="move_base" pkg="move_base" type="move_base" respawn="false" output="screen">
